@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "dev": "rollup -c -w"
+  },
+  "dependencies": {
+    "@types/d3-scale": "^2.0.0",
+    "@types/d3-shape": "^1.2.2",
+    "@types/react": "^16.0.38",
+    "@types/react-dom": "^16.0.4",
+    "d3-scale": "^2.0.0",
+    "d3-shape": "^1.2.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "rollup": "^0.56.1",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-node-resolve": "^3.0.3",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.11.1",
+    "typescript": "^2.7.2"
+  },
+  "name": "fourier",
+  "version": "1.0.0",
+  "license": "MIT"
+}
