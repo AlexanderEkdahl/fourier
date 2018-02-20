@@ -7,11 +7,10 @@ interface FrequencyRadialProps {
     width: number,
     height: number,
     signal: Signal,
-    steps: number,
 }
 
 export const FrequencyRadial: React.SFC<FrequencyRadialProps> = (props) => {
-    const { width, height, signal, steps } = props;
+    const { width, height, signal } = props;
     const scaleX = scaleLinear()
         .domain([0, 1 / 3])
         .range([Math.PI / 2, 2 * Math.PI + Math.PI / 2]);
@@ -22,7 +21,7 @@ export const FrequencyRadial: React.SFC<FrequencyRadialProps> = (props) => {
         .angle(([d, _]) => scaleX(d))
         .radius(([_, d]) => scaleY(d))
         .curve(curveCatmullRomOpen)
-        (sample(signal, steps))
+        (sample(signal))
 
     return (
         <svg width={width} height={height}>

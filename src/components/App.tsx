@@ -18,8 +18,8 @@ export class App extends React.Component<AppProps, AppState> {
 
         return (
             <div style={{ margin: 20 }}>
-                <FrequencyTime signal={signal} width={1400} height={400} steps={200} />
-                <FrequencyRadial signal={signal} width={400} height={400} steps={200} />
+                <FrequencyTime signal={signal} width={1400} height={400} />
+                <FrequencyRadial signal={signal} width={400} height={400} />
             </div>
         )
     }
